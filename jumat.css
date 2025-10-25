@@ -1,0 +1,99 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+line-height: 1.6;
+color: #333;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 1rem;
+}
+
+.confirmation-card {
+background-color: #ffffff;
+border-radius: 16px;
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+padding: 3rem; 
+max-width: 500px;
+width: 100%; 
+text-align: center; 
+opacity: 0;
+transform: translateY(20px);
+animation: fadeIn 0.5s ease-out forwards;
+}
+
+.icon-wrapper {
+margin-bottom: 1.5rem;
+}
+
+
+.icon {
+width: 80px; 
+height: 80px; 
+color: #22c55e; 
+}
+
+.confirmation-card h1 {
+font-size: 2rem; 
+font-weight: 700;
+color: #1f2937; 
+margin-bottom: 1rem;
+}
+
+.confirmation-card p {
+font-size: 1.125rem; 
+color: #374151;
+margin-bottom: 2rem;
+}
+
+.button {
+display: inline-block;
+text-decoration: none;
+background-color: #2563eb;
+color: #ffffff;
+padding: 0.85rem 1.75rem;
+border-radius: 8px; 
+font-weight: 600;
+font-size: 1rem;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+background-color: #1d4ed8;
+transform: translateY(-2px); 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+@media (max-width: 600px) {
+.confirmation-card {
+padding: 2rem 1.5rem; 
+}
+
+.confirmation-card h1 {
+font-size: 1.5rem; 
+}
+
+.confirmation-card p {
+font-size: 1rem; 
+}
+
+.icon {
+width: 64px; 
+height: 64px; 
+}
+}

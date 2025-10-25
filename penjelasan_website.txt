@@ -1,0 +1,52 @@
+PRESENTASI WEBSITE PERPUSTAKAAN DIGITAL SMAN 1 PLOSOKLATEN
+
+Halo teman-teman, guru-guru yang terhormat, dan semua yang hadir di sini. Saya [Nama Siswa], siswa kelas [Kelas] di SMAN 1 Plosoklaten, ingin mempresentasikan website perpustakaan digital yang saya buat bersama teman-teman. Website ini bertujuan untuk memudahkan akses buku-buku sekolah kita tanpa harus datang ke perpustakaan fisik. Mari kita mulai presentasinya!
+
+1. PENDAHULUAN
+   Website ini dinamakan "Perpustakaan Digital SMAN 1 Plosoklaten". Kenapa digital? Karena sekarang zaman modern, kita bisa baca buku lewat internet kapan saja dan di mana saja. Website ini dibuat menggunakan HTML, CSS, dan JavaScript, jadi bisa diakses dari komputer atau HP. Logo sekolah kita ada di atas, biar kelihatan resmi.
+
+2. FITUR-FITUR UTAMA
+   a. Halaman Beranda
+      - Ini halaman pertama yang muncul. Ada judul "Perpustakaan Digital" dan navigasi di atas.
+      - Navigasi punya menu: Beranda, Buku, Riwayat Baca (tapi cuma muncul kalau login), Admin (juga cuma buat admin), dan tombol Login/Logout.
+
+   b. Halaman Buku
+      - Klik gambar rak buku atau menu Buku, nanti ke halaman books.html.
+      - Di sini ada daftar buku-buku yang tersedia. Setiap buku punya judul, penulis, sinopsis, dan sampul.
+      - Siswa bisa klik buku untuk baca lewat link FlipHTML. Kayak buku elektronik!
+
+   c. Sistem Login
+      - Ada modal login yang muncul kalau klik tombol Login.
+      - Bisa login sebagai Siswa, Guru, atau Admin. Masing-masing punya username dan password.
+      - Kalau login sebagai siswa, bisa lihat riwayat baca dan buku yang dipinjam.
+
+   d. Riwayat Baca (untuk Siswa)
+      - Setelah login, menu Riwayat Baca muncul.
+      - Nampilin statistik siswa, seperti berapa buku yang dibaca.
+      - Ada daftar buku yang pernah dibaca dan yang sedang dipinjam.
+
+   e. Panel Admin
+      - Khusus buat admin. Bisa tambah buku baru dengan form: judul, penulis, sinopsis, URL sampul, dan link FlipHTML.
+      - Lihat aktivitas siswa, seperti siapa yang baca buku apa.
+      - Kelola akun siswa: tambah siswa baru atau lihat daftar siswa yang ada.
+
+3. CARA KERJA WEBSITE
+   - Website ini pakai JavaScript untuk interaksi. Misalnya, klik tombol login, muncul modal.
+   - Data disimpan di localStorage browser, jadi simpel dan gak perlu server.
+   - Ada tombol toggle password, biar bisa lihat password yang diketik.
+   - Semua halaman responsive, artinya bisa dibuka di HP juga.
+
+4. KESIMPULAN
+   - Website ini bermanfaat banget buat sekolah kita. Siswa bisa baca buku tanpa ke perpustakaan, guru bisa pantau, admin bisa kelola.
+   - Masih bisa dikembangkan lagi, misalnya tambah fitur pencarian buku atau notifikasi.
+   - Terima kasih sudah mendengarkan presentasi saya. Ada pertanyaan?
+
+5. SARAN FITUR TAMBAHAN MENURUT SAYA
+   Menurut saya, ada beberapa fitur yang bisa ditambahkan biar website ini lebih keren dan berguna. Ini saran dari saya sebagai siswa yang sering pakai perpustakaan:
+
+   a. Fitur Pencarian Buku
+      - Tambahin kotak pencarian di halaman buku. Siswa bisa cari buku berdasarkan judul, penulis, atau kata kunci. Jadi gak perlu scroll banyak kalau buku banyak.
+
+   b. Kategori Buku
+      - Bagi buku jadi kategori, kayak "Pelajaran", "Fiksi", "Biografi", atau "Sains". Biar mudah cari buku sesuai minat.
+

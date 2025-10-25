@@ -1,0 +1,144 @@
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #f7f9fb;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+padding: 1rem;
+margin: 0;
+}
+
+.confirmation-card {
+
+width: 100%;
+max-width: 512px; 
+background-color: #ffffff;
+padding: 2rem; 
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+border-radius: 1rem; 
+text-align: center;
+}
+
+@media (min-width: 768px) {
+.confirmation-card {
+padding: 3rem; 
+}
+}
+
+.main-title {
+font-size: 1.875rem; 
+font-weight: 800;
+color: #1f2937;
+margin-bottom: 0.75rem; 
+}
+
+.subtitle {
+color: #4b5563; 
+margin-bottom: 2rem; 
+max-width: 28rem; 
+margin-left: auto;
+margin-right: auto;
+}
+
+.success-icon-container {
+display: flex;
+justify-content: center;
+margin-bottom: 2rem;
+}
+
+.success-icon {
+width: 5rem; 
+height: 5rem; 
+color: #0d9488; 
+background-color: #ccfbf1; 
+padding: 0.75rem; 
+border-radius: 50%; 
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+}
+
+.alert-box {
+
+background-color: #fffbeb; 
+border-left: 4px solid #fbbf24; 
+padding: 1rem; 
+border-radius: 0.5rem; 
+text-align: left;
+margin-bottom: 2.5rem; 
+box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); 
+}
+
+.alert-content {
+display: flex;
+align-items: flex-start; 
+}
+
+.alert-icon-container {
+flex-shrink: 0;
+color: #f59e0b; 
+}
+
+.alert-text-container {
+margin-left: 0.75rem; 
+}
+
+.alert-heading {
+font-size: 0.875rem; 
+font-weight: 600; 
+color: #b45309; 
+}
+
+.alert-text {
+margin-top: 0.25rem; 
+font-size: 0.875rem; 
+color: #b45309; 
+}
+
+.cta-container {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+justify-content: center;
+}
+
+.button-base {
+padding: 0.75rem 1.5rem; 
+font-weight: 600; 
+border-radius: 0.5rem; 
+transition: all 0.15s ease-in-out; 
+cursor: pointer;
+text-align: center;
+width: 100%; 
+}
+
+.cta-primary {
+background-color: #0d9488; 
+color: #ffffff;
+border: none;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); 
+}
+
+.cta-primary:hover {
+background-color: #0f766e;
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-secondary {
+background-color: transparent;
+border: 2px solid #0d9488; 
+color: #0d9488; 
+}
+
+.cta-secondary:hover {
+background-color: #f0fdfa;
+}
+
+@media (min-width: 640px) {
+.cta-container {
+flex-direction: row; 
+}
+.button-base {
+width: auto; 
+}
+}

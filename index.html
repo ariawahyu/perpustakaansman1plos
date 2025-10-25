@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Perpustakaan Sekolah SMAN 1 Plosoklaten</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"     rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo SMAN 1 Plosoklaten" class="logo-img">
+                <div class="teks-header">
+                    <div class="baris-atas">PERPUSTAKAAN</div>
+                    <div class="baris-bawah">SMAN 1 PLOSOKLATEN</div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i>  Home</a></li>
+                <li><a href="#books"><i class="fas fa-book"></i>  Books</a></li>
+                <li><a href="#history" id="history-link" style="display:none;">Riwayat Baca</a></li>
+                <li><a href="#admin" id="admin-link" style="display:none;">Admin</a></li>
+                <li class="dropdown">
+                    <button id="login-btn" class="dropbtn"><i class="fas fa-user" class="icon"></i> <span>Login</span></button>
+                    <div id="login-dropdown" class="dropdown-content">
+                        <form id="login-form">
+                            <select id="user-type" required>
+                                <option value="">Pilih Pengguna</option>
+                                <option value="student">Siswa</option>
+                                <option value="guru">Guru</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                            <input type="text" id="username" placeholder="Username" required>
+                            <div class="password-container" id="password-container">
+                                <input type="password" id="password" placeholder="Password">
+                                <button type="button" id="toggle-password-login" class="toggle-password"><i class="fas fa-eye"></i></button>
+                            </div>
+                            <button type="submit">Login</button>
+                        </form>
+                    </div>
+                </li>
+                <li><button id="logout-btn" style="display:none;"><i class="fas fa-sign-out-alt"></i> Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="books" class="books-section">
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-info">
+                        <h3 class="book-title">Pinjam Buku</h3>
+                        <p class="book-synopsis">Pinjam buku fisik dari perpustakaan.</p>
+                        <button class="read-btn" onclick="window.location.href='index2.html'">Pinjam Buku</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-info">
+                        <h3 class="book-title">pengumpulan Jumat Literasi</h3>
+                        <p class="book-synopsis">setelah membaca  buku klik untuk mengisi absen dan ringkasan cerita</p>
+                        <button class="read-btn" onclick="window.location.href='index1.html'">Pengumpulan Jumat Literasi</button>
+                    </div>
+                </div>
+            </div>
+            <div id="books-container" class="books-grid">
+            </div>
+        </section>
+
+        <section id="history" class="history-section" style="display:none;">
+            <h2>Riwayat Baca</h2>
+            <div id="student-stats" class="stats-container">
+            </div>
+            <div id="history-container">
+            </div>
+        </section>
+
+
+
+        <section id="options" class="books-section" style="display:none;">
+            <div id="options-container" class="books-grid">
+            </div>
+        </section>
+
+
+
+        <section id="admin" class="admin-section" style="display:none;">
+            <h2>Panel Admin</h2>
+            <div class="admin-content">
+                <div class="student-activity">
+                    <h3>Aktivitas</h3>
+                    <div id="admin-stats" class="stats-container">
+                    </div>
+                    <div id="activity-container">
+                    </div>
+                </div>
+
+                <div class="manage-students">
+                    <h3>Kelola Akun Siswa</h3>
+                    <form id="add-student-form">
+                        <input type="text" id="student-username" placeholder="Username Siswa" required>
+                        <div class="password-container">
+                            <input type="password" id="student-password" placeholder="Password Siswa" required>
+                            <button type="button" id="toggle-password-student" class="toggle-password"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button type="submit">Tambah Siswa</button>
+                    </form>
+                    <h4>Daftar Siswa</h4>
+                    <div id="students-list">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

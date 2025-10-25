@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opsi Baca Buku - Perpustakaan Sekolah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"     rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Sekolah" class="logo-img">
+            <span>Perpustakaan Sekolah</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#" id="history-link">Riwayat</a></li>
+            <li><button id="logout-btn"style="display:;"><i class="fas fa-sign-out-alt"></i> Logout</button></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Perpustakaan Sekolah</h1>
+            <p>Pilih opsi baca buku yang sesuai dengan kebutuhan Anda</p>
+        </div>
+    </section>
+
+    <section class="books-section">
+        <h2>Opsi Baca Buku</h2>
+        <div class="books-grid" id="options-container">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Perpustakaan Sekolah. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderOptions();
+        });
+    </script>
+</body>
+</html>

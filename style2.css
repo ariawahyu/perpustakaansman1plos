@@ -1,0 +1,122 @@
+body {
+font-family: 'Poppins', sans-serif;
+background-image: url(memperkuat-peran-perpustakaan-sekolah-22022024-223528.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 120vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+cursor: pointer;
+}
+.container {
+background: white;
+border-radius: 16px;
+padding: 30px;
+width: 400px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+animation: fadeIn 0.8s ease;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+.title {
+text-align: center;
+color: black;
+margin-bottom: 20px;
+animation: loncatloncat 3s infinite;
+margin-top: 24px;
+}
+@keyframes loncatloncat {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(10px);
+}
+100% {
+transform: translateY(0);
+}
+}
+label {
+display: block;
+margin-bottom: 6px;
+color: #333;
+font-weight: 500;
+}
+input, select, textarea {
+width: 97%;
+padding: 12px 0; 
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 14px;
+outline: none;
+transition: all 0.3s ease;
+}
+input[type="text"]::placeholder {
+padding-left: 4px;
+}
+.tanggalPinjam, .tanggalKembali {
+width: 94%;
+padding-left: 12px;
+}
+#tanggalKembali, #tanggalPinjam {
+padding: 12px;
+}
+input:focus, select:focus, textarea:focus {
+border-color: #4facfe;
+box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+padding: 12px;
+}
+.aaa {
+padding-left: 12px;
+}
+button {
+background: #4facfe;
+color: white;
+border: transparent;
+padding: 12px 0;
+width: 100%;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+transition: 0.3s;
+color: #eaeaee;
+box-shadow: 2px 4px 10px 1px #333;
+margin-top: 10px;
+}
+button:hover {
+background: #eaeaea;
+color: #333;
+transition: 0.3s all ease-in-out;
+}
+.tombolKembali:hover {
+background: #eaeaea;
+color: black;
+transition: 0.3s all ease-in-out;
+}
+.tombolKembali {
+color: red;
+border: transparent;
+padding: 8 16px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 12px;
+font-weight: medium;
+transition: 0.3s;
+margin-top: 10px;
+text-decoration: none;
+text-align: center;
+}
+.success-message {
+display: none;
+text-align: center;
+color: green;
+margin-top: 10px;
+font-weight: bold;
+}

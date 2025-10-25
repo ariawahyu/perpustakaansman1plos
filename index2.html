@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"     rel="stylesheet">
+    <title>Peminjaman Buku Perpus</title>
+</head>
+<body>
+    
+<div class="container">
+    <a href="index.html" class="tombolKembali"> &lt;Kembali </a>
+
+    <h2 class="title">Isikan Data Diri Anda</h2>
+    <form id="peminjamanBuku" method="GET">
+        <label for="nama" name="nama">Nama Lengkap</label>
+        <input type="text" name="nama" name="nama" placeholder="Masukkan nama lengkap" class="aaa" required />
+
+
+        <label for="kelas">Kelas</label>
+        <input type="text" name="kelas" name="kelas" placeholder="Contoh: XII-A2" class="aaa"/>
+
+
+        <label for="judul">Judul Buku</label>
+        <input type="text" name="judul" name="judul" placeholder="Masukkan judul buku" required class="aaa"/>
+
+
+        <label for="tanggalPinjam">Tanggal Peminjaman</label>
+        <input type="date" name="tanggalPinjam" id="tanggalPinjam" class="tanggalPinjam" class="aaa" required />
+
+
+        <label for="tanggalKembali">Tanggal Pengembalian</label>
+        <input type="date" name="tanggalKembali" id="tanggalKembali" class="tanggalKembali" required />
+
+        <button type="submit">Kirim Data</button>
+    </form>
+    <div class="success-message" id="success">Data berhasil dikirim!</div>
+</div>
+<script src="script2.js"></script>
+
+    <script src="ty.js"></script>
+
+</body>
+</html>

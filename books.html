@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Perpustakaan Sekolah SMAN 1 Plosoklaten</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"     rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo SMAN 1 Plosoklaten" class="logo-img">
+                <span>Perpustakaan SMAN 1 Plosoklaten</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="books.html"><i class="fas fa-book"></i> Books</a></li>
+                <li><a href="#history" id="history-link" style="display:none;">Riwayat Baca</a></li>
+                <li><a href="#admin" id="admin-link" style="display:none;">Admin</a></li>
+                <li class="dropdown">
+                    <button id="login-btn" class="dropbtn"><i class="fas fa-user"></i> Login</button>
+                    <div id="login-dropdown" class="dropdown-content">
+                        <form id="login-form">
+                            <select id="user-type" required>
+                                <option value="">Pilih Tipe Pengguna</option>
+                                <option value="student">Siswa</option>
+                                <option value="guru">Guru</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                            <input type="text" id="username" placeholder="Username" required>
+                            <div class="password-container" id="password-container">
+                                <input type="password" id="password" placeholder="Password">
+                                <button type="button" id="toggle-password-login" class="toggle-password"><i class="fas fa-eye"></i></button>
+                            </div>
+                            <button type="submit">Login</button>
+                        </form>
+                    </div>
+                </li>
+                <li><button id="logout-btn" style="display:none;"><i class="fas fa-sign-out-alt"></i> Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="books" class="books-section">
+            
+            <div id="books-container" class="books-grid">
+            </div>
+        </section>
+
+        <section id="history" class="history-section" style="display:none;">
+            <h2>Riwayat Baca</h2>
+            <div id="history-container">
+            </div>
+        </section>
+
+        <section id="admin" class="admin-section" style="display:none;">
+            <h2>Panel Admin</h2>
+            <div class="admin-content">
+                <div class="add-book">
+                    <h3>Tambah Buku</h3>
+                    <form id="add-book-form">
+                        <input type="text" id="book-title" placeholder="Judul Buku" required>
+                        <input type="text" id="book-author" placeholder="Penulis" required>
+                        <textarea id="book-synopsis" placeholder="Sinopsis" required></textarea>
+                        <input type="url" id="book-cover" placeholder="URL Sampul Buku" required>
+                        <input type="url" id="book-link" placeholder="Link FlipHTML" required>
+                        <button type="submit">Tambah Buku</button>
+                    </form>
+                </div>
+                <div class="student-activity">
+                    <h3>Aktivitas Siswa</h3>
+                    <div id="activity-container">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

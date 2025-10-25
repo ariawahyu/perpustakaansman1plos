@@ -1,0 +1,131 @@
+body {
+font-family: 'Poppins', sans-serif;
+background-image: url(memperkuat-peran-perpustakaan-sekolah-22022024-223528.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 120vh;
+margin: 0;
+cursor: pointer;
+}
+.container {
+background-color: white;
+border-radius: 16px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+padding: 40px;
+width: 90%;
+max-width: 480px;
+animation: fadeIn 1s ease-in-out;
+margin-top: 14x;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+h2 {
+text-align: center;
+color: black;
+margin-top: 24px;
+margin-bottom: 30px;
+animation: loncatloncat 3s infinite;
+}
+@keyframes loncatloncat {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(8px);
+}
+100% {
+transform: translateY(0);
+}
+}
+label {
+font-weight: 500;
+display: block;
+margin-bottom: 6px;
+color: #333;
+}
+input, textarea, select {
+width: 100%;
+padding: 12px 0;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 14px;
+outline: none;
+transition: all 0.3s ease;
+}
+input:focus, textarea:focus, select:focus {
+border-color: #3f87a6;
+box-shadow: 0 0 6px rgba(63, 135, 166, 0.5);
+padding: 12px;
+}
+input[type="text"]::placeholder {
+padding-left: 4px;
+}
+.aaa {
+padding-left: 12px;
+}
+textarea::placeholder {
+padding-left: 4px;
+}
+textarea {
+resize: vertical;
+min-height: 80px;
+}
+.tanggalPinjam, .tanggalKembali {
+width: 95%;
+padding-left: 12px;
+}
+#tanggalKembali, #tanggalPinjam {
+padding: 12px;
+}
+button {
+background: #4facfe;
+color: white;
+border: transparent;
+padding: 12px 0;
+width: 100%;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+transition: 0.3s;
+color: #eaeaee;
+box-shadow: 2px 4px 10px 1px #333;
+margin-top: 16px;
+}
+button:hover {
+background: #eaeaea;
+color: black;
+transition: 0.3s all ease-in-out;
+}
+.tombolKembali:hover {
+background: #eaeaea;
+color: #333;
+transition: 0.3s all ease-in-out;
+}
+.tombolKembali {
+color: red;
+border: transparent;
+padding: 8 16px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 12px;
+font-weight: medium;
+transition: 0.3s;
+margin-top: 10px;
+text-decoration: none;
+text-align: center;
+}
+.success-message {
+display: none;
+text-align: center;
+color: green;
+margin-top: 10px;
+font-weight: bold;
+}
