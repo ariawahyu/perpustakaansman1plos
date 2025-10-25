@@ -16,7 +16,7 @@ Perpustakaan Digital SMAN 1 Plosoklaten adalah aplikasi web sederhana untuk meng
 - **Daftar & browsing buku** — tampilan grid lengkap judul, penulis, dan sinopsis.
 - **Pembaca online** — integrasi viewer (FlipHTML) untuk membaca buku digital langsung di browser.
 - **Riwayat baca** — melacak aktivitas membaca (fitur khusus siswa).
-- **Panel Admin** — mengelola buku, akun siswa, dan melihat statistik singkat.
+- **Panel Admin** — mengelola akun siswa, dan melihat statistik singkat.
 - **Panel Guru** — akses baca dan melihat riwayat baca siswa (tanpa hak edit).
 - **Pinjam Buku** — form peminjaman untuk buku fisik (data tersimpan di spreadsheet).
 - **Pengumpulan Jumat Literasi** — siswa mengisi absen dan ringkasan setelah membaca (tersimpan ke spreadsheet).
@@ -64,8 +64,6 @@ perpustakaan/
 ├── styles.css
 ├── script.js
 ├── logo.png
-├── sekolah.jpeg
-├── fotosekolah.jpeg
 ├── penjelasan_website.txt
 ├── spreadsheet/   (integrasi / skrip terkait)
 └── README.md
