@@ -7,7 +7,6 @@
 ## Ringkasan singkat
 Perpustakaan Digital SMAN 1 Plosoklaten adalah aplikasi web sederhana untuk mengelola dan membaca koleksi buku digital serta melakukan peminjaman buku fisik. Dirancang sebagai portofolio dan alat bantu pembelajaran untuk siswa, guru, dan admin sekolah — cepat, ringan, dan mudah di-deploy ke GitHub Pages.
 
-> Catatan filosofi singkat: ini bukan hanya 'website perpustakaan'—ini prototipe edukasi. Kalau mau dipakai serius, kita perlu upgrade keamanan dan backendnya. Tapi untuk demo sekolah, ini keren.
 
 ---
 
@@ -26,7 +25,6 @@ Perpustakaan Digital SMAN 1 Plosoklaten adalah aplikasi web sederhana untuk meng
 ## Demo & Akses
 - **Tampilan live (GitHub Pages):** https://ariawahyu.github.io/perpustakaansman1plos/
 
-> Jika Anda melihat tampilan dasar: Home, Books, Riwayat Baca, Admin, dan Login — itu normal untuk versi ini. Untuk detail halaman, buka menu "Books" dan "Admin".
 
 ---
 
@@ -42,7 +40,6 @@ Perpustakaan Digital SMAN 1 Plosoklaten adalah aplikasi web sederhana untuk meng
 - Guru: `guru` / `guru123`  
 - (Siswa: dibuat oleh admin melalui panel admin)
 
-> **Penting:** Gantilah kredensial demo ini sebelum men-deploy untuk penggunaan nyata. Simpan password lebih kuat, atau pindahkan otentikasi ke backend.
 
 ---
 
@@ -64,8 +61,18 @@ perpustakaan/
 ├── styles.css
 ├── script.js
 ├── logo.png
-├── sekolah.jpeg
-├── fotosekolah.jpeg
+├── fotoperpusrandom.jpeg
+├── index1.html
+├── style1.css
+├── script1.js
+├── index2.html
+├── style2.css
+├── script2.js
+├── ty.html
+├── ty.css
+├── ty.js
+├── jumat.html
+├── jumat.css
 ├── penjelasan_website.txt
 ├── spreadsheet/   (integrasi / skrip terkait)
 └── README.md
@@ -103,9 +110,5 @@ perpustakaan/
 
 ---
 
-Terima kasih sudah membangun alat belajar ini — ringan, berguna, dan punya ruang besar untuk jadi lebih matang. Kalau mau, saya bantu:
-- perbaiki README agar otomatis menampilkan badge (CI / Live demo),
-- atau buatkan versi README bahasa Inggris untuk publikasi.
 
-(README ini dibuat berdasarkan isi repo saat ini dan tampilan live demo.)
 
